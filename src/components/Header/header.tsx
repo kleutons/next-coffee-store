@@ -18,10 +18,12 @@ interface HeaderProps{
 export function Header(props:HeaderProps){
     return(
         <S.TagHeader>
-            <S.Logo className={sairaStencil.className}> coffee </S.Logo>
-            <div>
-                <HeaderSearchInput placeholder='Procurando por algo específico?' />
-                <CartControl />
+            <div className='container'>
+                <S.Logo className={sairaStencil.className}> coffee </S.Logo>
+                <div className='container-input'>
+                    <HeaderSearchInput placeholder='Procurando por algo específico?' />
+                    <CartControl />
+                </div>
             </div>
         </S.TagHeader>
     )
